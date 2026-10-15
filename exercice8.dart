@@ -20,3 +20,19 @@ class Livre {
     print("Nombre total de livres : $totalLivres");
   }
 }
+
+class Roman extends Livre {
+  String genre;
+
+  Roman(super.titre, super.auteur, this.genre);
+
+  void afficherGenre() {
+    print("Genre: $genre");
+  }
+
+  @override
+  void afficherInfos() {
+    super.afficherInfos();
+    afficherGenre();
+  }
+}
