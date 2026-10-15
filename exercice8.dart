@@ -36,3 +36,18 @@ class Roman extends Livre {
     afficherGenre();
   }
 }
+
+void main() {
+  var l1 = Livre("Le Fils du pauvre", "aziz Feraoun");
+  var l2 = Livre("Les Hirondelles de Kaboul", "imene bouno");
+  l1.afficherInfos();
+  l2.afficherInfos();
+  print("Pages de l1 : ${l1.pages}");
+
+  var r1 = Roman("salima", "lahmar amine", "Drame");
+  var r2 = Roman("La Colline oubliée", "aziz idoui", "Roman social");
+  r1.afficherInfos();
+  r2.afficherInfos();
+
+  Livre.afficherTotal();
+}
